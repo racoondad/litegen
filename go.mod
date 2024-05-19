@@ -7,7 +7,7 @@ require (
 	gorm.io/datatypes v1.1.1-0.20230130040222-c43177d3cf8c
 	gorm.io/gorm v1.25.9
 	gorm.io/hints v1.1.0
-	gorm.io/plugin/dbresolver v1.5.0
+	gorm.io/plugin/dbresolver v1.5.1
 )
 
 require (
