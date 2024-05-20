@@ -1,4 +1,4 @@
-package gen
+package litegen
 
 import (
 	"fmt"
@@ -9,7 +9,7 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/utils/tests"
 
-	"gorm.io/gen/internal/model"
+	"github.com/racoondad/litegen/internal/model"
 )
 
 // GenerateMode generate mode

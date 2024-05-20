@@ -1,4 +1,4 @@
-package gen
+package litegen
 
 import (
 	"bytes"
@@ -19,12 +19,12 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/schema"
 
-	"gorm.io/gen/helper"
-	"gorm.io/gen/internal/generate"
-	"gorm.io/gen/internal/model"
-	"gorm.io/gen/internal/parser"
-	tmpl "gorm.io/gen/internal/template"
-	"gorm.io/gen/internal/utils/pools"
+	"github.com/racoondad/litegen/helper"
+	"github.com/racoondad/litegen/internal/generate"
+	"github.com/racoondad/litegen/internal/model"
+	"github.com/racoondad/litegen/internal/parser"
+	tmpl "github.com/racoondad/litegen/internal/template"
+	"github.com/racoondad/litegen/internal/utils/pools"
 )
 
 // T generic type
@@ -88,8 +88,8 @@ func (i *genInfo) methodInGenInfo(m *generate.InterfaceMethod) bool {
 type Generator struct {
 	Config
 
-	Data   map[string]*genInfo                  //gen query data
-	models map[string]*generate.QueryStructMeta //gen model data
+	Data   map[string]*genInfo                  // gen query data
+	models map[string]*generate.QueryStructMeta // gen model data
 }
 
 // UseDB set db connection
@@ -566,7 +566,7 @@ func (g *Generator) output(fileName string, content []byte) error {
 		}
 		return fmt.Errorf("cannot format file: %w", err)
 	}
-	return os.WriteFile(fileName, result, 0640)
+	return os.WriteFile(fileName, result, 0o640)
 }
 
 func (g *Generator) pushQueryStructMeta(meta *generate.QueryStructMeta) (*genInfo, error) {

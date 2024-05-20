@@ -12,11 +12,11 @@ import (
 	"gorm.io/gorm/schema"
 
 	"gorm.io/gen"
-	"gorm.io/gen/field"
+	"github.com/racoondad/litegen/field"
 
 	"gorm.io/plugin/dbresolver"
 
-	"gorm.io/gen/tests/.gen/dal_4/model"
+	"github.com/racoondad/litegen/tests/.gen/dal_4/model"
 )
 
 func newBank(db *gorm.DB, opts ...gen.DOOption) bank {

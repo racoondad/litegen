@@ -1,4 +1,4 @@
-module gorm.io/gen
+module github.com/racoondad/litegen
 
 go 1.18
 

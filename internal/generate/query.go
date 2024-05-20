@@ -9,9 +9,9 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/schema"
 
-	"gorm.io/gen/field"
-	"gorm.io/gen/internal/model"
-	"gorm.io/gen/internal/parser"
+	"github.com/racoondad/litegen/field"
+	"github.com/racoondad/litegen/internal/model"
+	"github.com/racoondad/litegen/internal/parser"
 )
 
 type FieldParser interface {

@@ -12,11 +12,11 @@ import (
 	"gorm.io/gorm/schema"
 
 	"gorm.io/gen"
-	"gorm.io/gen/field"
+	"github.com/racoondad/litegen/field"
 
 	"gorm.io/plugin/dbresolver"
 
-	"gorm.io/gen/tests/.expect/dal_test/model"
+	"github.com/racoondad/litegen/tests/.expect/dal_test/model"
 )
 
 func newCustomer(db *gorm.DB) customer {

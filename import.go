@@ -1,4 +1,4 @@
-package gen
+package litegen
 
 import "strings"
 
@@ -13,8 +13,8 @@ var (
 		"gorm.io/gorm/clause",
 		"",
 		"gorm.io/gen",
-		"gorm.io/gen/field",
-		"gorm.io/gen/helper",
+		"github.com/racoondad/litegen/field",
+		"github.com/racoondad/litegen/helper",
 		"",
 		"gorm.io/plugin/dbresolver",
 	)

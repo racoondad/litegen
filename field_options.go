@@ -1,13 +1,13 @@
-package gen
+package litegen
 
 import (
 	"reflect"
 	"regexp"
 	"strings"
 
-	"gorm.io/gen/field"
-	"gorm.io/gen/internal/generate"
-	"gorm.io/gen/internal/model"
+	"github.com/racoondad/litegen/field"
+	"github.com/racoondad/litegen/internal/generate"
+	"github.com/racoondad/litegen/internal/model"
 	"gorm.io/gorm/schema"
 )
 
@@ -142,7 +142,6 @@ var (
 		return func(m *model.Field) *model.Field {
 			if schemaName != nil {
 				m.Tag.Set(field.TagKeyJson, schemaName(m.ColumnName))
-
 			}
 			return m
 		}
@@ -262,12 +261,9 @@ var (
 	}
 )
 
-var (
-	DefaultMethodTableWithNamer = (&defaultModel{}).TableName
-)
+var DefaultMethodTableWithNamer = (&defaultModel{}).TableName
 
-type defaultModel struct {
-}
+type defaultModel struct{}
 
 func (*defaultModel) TableName(namer schema.Namer) string {
 	if namer == nil {

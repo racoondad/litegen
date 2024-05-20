@@ -14,12 +14,12 @@ import (
 	"gorm.io/gorm/schema"
 
 	"gorm.io/gen"
-	"gorm.io/gen/field"
-	"gorm.io/gen/helper"
+	"github.com/racoondad/litegen/field"
+	"github.com/racoondad/litegen/helper"
 
 	"gorm.io/plugin/dbresolver"
 
-	"gorm.io/gen/tests/.gen/dal_4/model"
+	"github.com/racoondad/litegen/tests/.gen/dal_4/model"
 
 	"time"
 )

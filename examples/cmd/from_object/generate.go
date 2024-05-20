@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/racoondad/litegen/helper"
 	"gorm.io/gen"
-	"gorm.io/gen/helper"
 )
 
 var detail, data helper.Object

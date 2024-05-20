@@ -1,9 +1,9 @@
 package main
 
 import (
+	"github.com/racoondad/litegen/examples/conf"
+	"github.com/racoondad/litegen/examples/dal"
 	"gorm.io/gen"
-	"gorm.io/gen/examples/conf"
-	"gorm.io/gen/examples/dal"
 )
 
 func init() {

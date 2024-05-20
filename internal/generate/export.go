@@ -10,10 +10,10 @@ import (
 	"gorm.io/gorm/schema"
 	"gorm.io/gorm/utils/tests"
 
-	"gorm.io/gen/field"
-	"gorm.io/gen/helper"
-	"gorm.io/gen/internal/model"
-	"gorm.io/gen/internal/parser"
+	"github.com/racoondad/litegen/field"
+	"github.com/racoondad/litegen/helper"
+	"github.com/racoondad/litegen/internal/model"
+	"github.com/racoondad/litegen/internal/parser"
 )
 
 // GetQueryStructMeta generate db model by table name

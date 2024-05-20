@@ -1,4 +1,4 @@
-package gen
+package litegen
 
 import (
 	"database/sql"
@@ -7,7 +7,7 @@ import (
 	"gorm.io/gorm/clause"
 	"gorm.io/gorm/schema"
 
-	"gorm.io/gen/field"
+	"github.com/racoondad/litegen/field"
 )
 
 type (

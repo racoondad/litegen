@@ -1,10 +1,10 @@
-package gen
+package litegen
 
 import (
 	"fmt"
 
+	"github.com/racoondad/litegen/field"
 	"gorm.io/datatypes"
-	"gorm.io/gen/field"
 	"gorm.io/gorm/clause"
 )
 

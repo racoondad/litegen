@@ -12,8 +12,8 @@ import (
 	"gorm.io/gorm/schema"
 
 	"gorm.io/gen"
-	"gorm.io/gen/examples/dal/model"
-	"gorm.io/gen/field"
+	"github.com/racoondad/litegen/examples/dal/model"
+	"github.com/racoondad/litegen/field"
 )
 
 func newMytable(db *gorm.DB) mytable {

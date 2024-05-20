@@ -10,8 +10,8 @@ import (
 	"testing"
 
 	"gorm.io/gen"
-	"gorm.io/gen/field"
-	"gorm.io/gen/tests/.gen/dal_6/model"
+	"github.com/racoondad/litegen/field"
+	"github.com/racoondad/litegen/tests/.gen/dal_6/model"
 	"gorm.io/gorm/clause"
 )
 

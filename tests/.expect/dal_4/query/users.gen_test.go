@@ -12,8 +12,8 @@ import (
 	"time"
 
 	"gorm.io/gen"
-	"gorm.io/gen/field"
-	"gorm.io/gen/tests/.gen/dal_4/model"
+	"github.com/racoondad/litegen/field"
+	"github.com/racoondad/litegen/tests/.gen/dal_4/model"
 	"gorm.io/gorm/clause"
 )
 
